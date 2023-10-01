@@ -1,3 +1,5 @@
+// Video 5
+
 "use strict"; //this is used to treat all JS code as a newer version || Not required to write this as it is already in the V8 engine by degault.    
 
 

@@ -1,6 +1,8 @@
+// Video 4
+
 const fName = 'Sourabh';
 let accNo = '184315984';
-var phNo = '9003749275';
+var phNo = '9003749275'; //NOT MY NUMBER. DON'T CALL
 
 let DOB; // if we do not define a variale then the value of the variable is undefined
 

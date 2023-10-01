@@ -1,3 +1,5 @@
+// Video 6
+
 let score = '33ac';
 
 // console.log(typeof score);   //both method is correct
@@ -29,6 +31,9 @@ let stringNumber = String(someNumber)
 // console.log(stringNumber);
 // console.log(typeof stringNumber);
 
+
+
+// Video 7
 // *********************** Operations ***********************
 
 let value = 3
@@ -41,6 +46,8 @@ let negValue = -value
 // console.log(2**3);
 // console.log(2/3);
 // console.log(2%3);
+
+// Video 6
 
 let str1 = "hello"
 let str2 = " hitesh"
