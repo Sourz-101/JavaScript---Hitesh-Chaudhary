@@ -60,11 +60,30 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // this will return an array of keys from that object
-console.log(Object.values(tinderUser));// this will return an array of values from that object
-console.log(Object.entries(tinderUser)); // this will return an array of array where first entry will be keys and the second entry will be its value. Not widely used
+// console.log(Object.keys(tinderUser)); // this will return an array of keys from that object
+// console.log(Object.values(tinderUser));// this will return an array of values from that object
+// console.log(Object.entries(tinderUser)); // this will return an array of array where first entry will be keys and the second entry will be its value. Not widely used
 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // this used to check is there any property in the object 
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // this used to check is there any property in the object 
+
+
+// Video 18
+
+
+const course = {
+    coursename: "Javascript",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// course.courseInstructor
+// Destructuring allows to extract properties from an object and bind them to variables.
+const {courseInstructor: instructor} = course; // we can rename the propery using : and give them new name
+
+// console.log(courseInstructor);
+// console.log(instructor);
+
+
