@@ -1,8 +1,9 @@
-// Video 29
+// Video 30
 
 // Map
 
 // map always return unlinke for-each
+// map returns a new array of elements where you have applied some function on the element so that it changes the original element
 
 
 

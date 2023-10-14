@@ -1,4 +1,7 @@
-// Video 29
+// Video 30
+
+// filter
+// ilter returns a new array of the elements of the original array (with no change to the original values).
 
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
