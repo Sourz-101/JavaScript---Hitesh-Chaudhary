@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Part II</title>
+
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+
+<script>
+
+const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children); // gives HTML Collection of all the children present in the element
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //      console.log(parent.children[i].innerHTML);
+        
+    // }
+    parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild); //gives the first child of the selected element
+    // console.log(parent.lastElementChild); ////gives the last child of the selected element
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement); //moves one place above in DOM tree and return its parent
+    // console.log(dayOne.nextElementSibling); // gives immediate next sibling from the DOM tree
+
+    console.log("NODES: ", parent.childNodes);  // Returns all the nodes 
+
+</script>
+
+</html>
