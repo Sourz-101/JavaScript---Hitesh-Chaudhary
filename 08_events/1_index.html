@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+
+    /*
+
+    // It in never recommended to use inline js script in HTML
+
+    // document.getElementById('owl').onclick = function () {
+    //     alert('Owl Clicked')
+    // } // this is also not recommended as onclick has less feature than eventListners
+
+
+    
+    // attachEvent() -- legacy
+    // jQuery - this has onEventListner
+    
+    // event listner has 3 paramete .addEventListner('event', function, true/false);
+
+    // document.getElementById('owl').addEventListener('click', function(evt) {
+    //     console.log(evt);
+    // }, false)
+    
+    // Thing to read
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElelment, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+
+    // Event Propogation (third parameter of eventlistner)
+    // false -> event bubbling
+    // true -> event capturing
+
+    document.getElementById('images').addEventListener('click', function(evt) {
+        console.log('clicked inside the ul');
+    }, false) //false is default value
+
+    document.getElementById('owl').addEventListener('click', function(evt) {
+        console.log('owl clicked');
+        evt.stopPropagation(); //in above eventlistner the propogation was from owl to ul when the value was false (bubbling) and when the value was true the propogation was like ul to owl(regular HTML flow). If we use stopPropagation then the bubble propogation will stop and only owl will pe print
+    }, false)
+
+
+    document.getElementById('google').addEventListener('click', (evt) => {
+        evt.preventDefault();
+        evt.stopPropagation();
+        console.log('Google clicked');
+    }, false)
+
+
+
+    */
+
+
+    document.querySelector('#images').addEventListener('click', function(evt) {
+        console.log(evt.target.tagName);
+        if(evt.target.tagName === 'IMG') {
+            let removeIt = evt.target.parentNode;
+            removeIt.remove();
+            // removeIt.parentNode.removeChild(removeIt); //another approach
+        }
+
+    }, false);
+
+
+
+    
+
+</script>
+</html>

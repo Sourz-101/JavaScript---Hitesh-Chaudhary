@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+
+</body>
+
+<script>
+    // This funciton waits for specified time and execute the function once
+    setTimeout(() => {
+        console.log('Sourabh');
+    }, 2000);
+
+    // Above code can also be written as
+
+    const sayMyName = function () {
+        console.log('SOURABH');
+    }
+    setTimeout(sayMyName, 3000);
+
+    const changeText = function() {
+        document.querySelector('h1').innerHTML = 'Best JS Course';
+    }
+
+    const changeMe= setTimeout(changeText, 4000);
+
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearTimeout(changeMe); // This will prevent the setTimeout funciton to execute
+        console.log('Stopped');
+    })
+
+
+
+
+</script>
+
+</html>

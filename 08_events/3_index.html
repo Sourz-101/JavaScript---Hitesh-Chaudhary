@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+
+<script>
+    /*
+    // setInterval( () => {
+    //     console.log("SOURABH", Date.now());
+    // }, 1000)
+
+    const sayDate = () => {
+        console.log("Sourabh", Date.now());
+    }
+
+    const intervalId = setInterval(sayDate, 1000);
+
+    // set interval also have a third paramete to pass any message to the funcion
+    setInterval( (str) => {
+        console.log(str);
+    }, 2000, "Every 2 sec");
+
+
+    // to stop a setInterval
+    clearInterval(intervalId);
+
+    */
+
+
+    // Task
+
+    const Start = document.getElementById('start');
+    const Stop = document.getElementById('stop');
+
+    let display = undefined;
+
+    Start.addEventListener('click', () => {
+        display = setInterval(() => {
+            console.log(`Sourabh : ${Date.now()}`);
+        }, 1000);
+    });
+
+
+
+    Stop.addEventListener('click', () => {
+        clearInterval(display);
+        console.log('Stopped');
+        display = null;
+    })
+
+
+</script>
+</html>
